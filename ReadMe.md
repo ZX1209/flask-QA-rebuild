@@ -17,6 +17,12 @@ deactivate
 ```
 
 - [ ] 配置好git仓库
-peewee
+
+- [ ] peewee?
+- [ ] 带着 flask-template
+- [ ] 常用页面.
+- [ ] 测试?
+
+
 
 
