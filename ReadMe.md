@@ -16,9 +16,20 @@ deactivate
 
 ```
 
-- [ ] 配置好git仓库
+- [x] 配置好git仓库
+```bash
+githubApi --username --password createRepo --repoName='something'
 
-- [ ] peewee?
+# add remote node
+git remote add origin {remote_url}
+git push -u origin master
+git push --set-upstream origin master # 设置默认 push 目标
+```
+- [x] peewee?
+foreign learned
+
+- [ ] restfull api 构建
+
 - [ ] 带着 flask-template
 - [ ] 常用页面.
 - [ ] 测试?
