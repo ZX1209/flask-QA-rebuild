@@ -12,6 +12,10 @@ python -m venv venv
 
 venv\Scripts\activate
 
+set FLASK_APP=flask_QA
+set FLASK_ENV=development
+flask run
+
 deactivate
 
 ```
@@ -28,9 +32,34 @@ git push --set-upstream origin master # 设置默认 push 目标
 - [x] peewee?
 foreign learned
 
-- [ ] restfull api 构建
+split class and db get,create
 
-- [ ] 带着 flask-template
+- [ ] restfull api 构建
+用户
+    get    验证
+    post    上传?
+    push    更新用户信息
+    delete 删除用户信息
+
+问题
+    get    取,使用关键词
+    post    上传
+    push    修改
+    d...
+Questions?
+Question/id
+
+回答
+    get    获取,参数在keywords
+    push    
+    post
+    delete
+
+- [x] 带着 flask-template
+
+- [ ] auth things
+- [ ] session things
+
 - [ ] 常用页面.
 - [ ] 测试?
 
