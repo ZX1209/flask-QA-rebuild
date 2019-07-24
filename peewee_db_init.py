@@ -1,17 +1,10 @@
-from peewee import Model  # peewee提供的基础类，一个Model就对应一个数据库
-from peewee import SqliteDatabase  # 我使用Sqlite
-from peewee import BooleanField  # 几种常见的数据类型，还有PrimaryField自己可以看看用法
-from peewee import CharField
-from peewee import FloatField
-from peewee import ForeignKeyField
-from peewee import IntegerField
-from peewee import TextField
-from peewee import DateTimeField
-from peewee import ManyToManyField
-
 from pathlib import Path
 
-from peewee_db_resources import get_db
+import random
+
+from db_resources import get_db
+
+from peewee_db_class import User, Option, Question
 
 db = get_db()
 """
@@ -60,13 +53,6 @@ def testdb(db):
 
 # [option.body for option in q1.options]
 
-# def drop_table(table):
-#     u"""
-#     table 存在，就删除
-#     """
-#     if table.table_exists():
-#         table.drop_table()
-
-# # 分别建立Teacher和Student表
-# create_table(Teacher)
-# create_table(Student)
+if __name__ == "__main__":
+    create_db(db)
+    testdb(db)
